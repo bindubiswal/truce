@@ -1,0 +1,56 @@
+.app-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.app-header-wordmark {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--rose-hover);
+  letter-spacing: 0.15em;
+}
+
+.app-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.app-header-email {
+  font-size: 0.8rem;
+  color: var(--grey);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.app-header-signout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--surface-light);
+  color: var(--grey-light);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.app-header-signout:hover {
+  background-color: var(--rose-muted);
+  color: var(--white);
+}
+
+/* Keep the header pinned to the top and the card centred in the space below it */
+.app-header + * {
+  margin-top: auto;
+  margin-bottom: auto;
+}

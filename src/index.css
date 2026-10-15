@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0e0e0e;
+  --surface: #1a1a1a;
+  --surface-light: #242424;
+  --rose: #8b2f4f;
+  --rose-hover: #a33d63;
+  --rose-muted: rgba(139, 47, 79, 0.15);
+  --white: #f5f5f5;
+  --grey: #999999;
+  --grey-light: #cccccc;
+  --radius: 12px;
+  --radius-pill: 50px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--white);
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+a {
+  color: var(--rose);
+  text-decoration: none;
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+.text-link {
+  font-size: 0.9rem;
+  color: var(--grey-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.text-link:hover {
+  color: var(--white);
+}
+
+.loading-line {
+  color: var(--grey);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--rose-hover);
+  outline-offset: 2px;
+}

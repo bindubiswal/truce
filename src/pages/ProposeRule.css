@@ -1,0 +1,90 @@
+.propose-rule-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+}
+
+.propose-rule-subtext {
+  font-size: 0.9rem;
+  color: var(--grey);
+  text-align: center;
+  margin-top: -12px;
+  font-style: italic;
+}
+
+.propose-rule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.char-counter {
+  font-size: 0.8rem;
+  color: var(--grey);
+  text-align: right;
+  align-self: flex-end;
+}
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--grey-light);
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: var(--surface-light);
+  color: var(--grey);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.category-tag-icon {
+  flex-shrink: 0;
+}
+
+.category-tag:hover {
+  background-color: var(--rose-muted);
+  color: var(--white);
+}
+
+.category-tag.active {
+  background-color: var(--rose-muted);
+  color: var(--rose-hover);
+  border-color: var(--rose);
+}
+
+.char-counter-full {
+  color: var(--rose-hover);
+  font-weight: 600;
+}

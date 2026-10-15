@@ -1,0 +1,27 @@
+.primary-button {
+  width: 100%;
+  padding: 16px 32px;
+  background-color: var(--rose);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-pill);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  letter-spacing: 0.02em;
+}
+
+.primary-button:hover {
+  background-color: var(--rose-hover);
+}
+
+.primary-button:active {
+  transform: scale(0.98);
+}
+
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
